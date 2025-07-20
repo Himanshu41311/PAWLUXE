@@ -34,7 +34,7 @@ Pawluxe is a full-stack web application built to connect pet lovers across India
 
 **Other Tools**
 - Razorpay (planned)
-- Cloudinary or AWS S3 (for image storage - planned)
+- AWS S3 (for image storage)
 
 ---
 
