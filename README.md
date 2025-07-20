@@ -48,19 +48,3 @@ Pawluxe is a full-stack web application built to connect pet lovers across India
 |-- PostgreSQL Database    -> Stores user and pet data
 |-- Frontend (Vanilla JS)  -> UI with infinite scroll & adoption form
 ```
-✅ Current Progress
- Backend microservices structure ready
-
- PostgreSQL schema for users & pets
-
- Basic frontend with sample card layout
-
- OTP Auth service (WIP)
-
- Image Upload microservice
-
- Razorpay integration
-
- Final wiring & testing
-
- 
