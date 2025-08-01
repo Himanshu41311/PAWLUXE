@@ -1,0 +1,210 @@
+/* Base Reset */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #f0f4f8;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  padding: 1rem;
+}
+
+/* Form Container */
+.form-container {
+  background-color: #ffffff;
+  padding: 2rem;
+  border-radius: 16px;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 420px;
+}
+
+.form-container h1 {
+  text-align: center;
+  margin-bottom: 1.5rem;
+  color: #1e293b;
+  font-size: 1.8rem;
+}
+
+/* Input Fields */
+input[type="text"],
+input[type="email"],
+input[type="password"] {
+  width: 100%;
+  padding: 0.75rem 1rem;
+  margin: 0.5rem 0;
+  border: 1px solid #cbd5e1;
+  border-radius: 8px;
+  font-size: 0.95rem;
+  transition: border 0.3s ease;
+}
+
+input:focus {
+  border-color: #2563eb;
+  outline: none;
+  box-shadow: 0 0 0 2px rgba(37, 99, 235, 0.2);
+}
+
+/* Email Verification Group */
+.email-group,
+#otpSection {
+  display: flex;
+  gap: 0.5rem;
+  align-items: center;
+  margin: 0.5rem 0;
+}
+
+.email-group input,
+#otpSection input {
+  flex: 1;
+}
+
+/* Buttons */
+button {
+  padding: 0.75rem 1rem;
+  font-size: 1rem;
+  border-radius: 8px;
+  border: none;
+  background-color: #2563eb;
+  color: #ffffff;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #1e40af;
+}
+
+button:disabled {
+  background-color: #a5b4fc;
+  cursor: not-allowed;
+}
+
+/* Sign Up Button Full Width */
+form button[type="submit"] {
+  width: 100%;
+  margin-top: 1rem;
+}
+
+/* Text Link */
+.form-container p {
+  text-align: center;
+  margin-top: 1rem;
+  font-size: 0.9rem;
+  color: #475569;
+}
+
+.form-container a {
+  color: #2563eb;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.form-container a:hover {
+  text-decoration: underline;
+}
+
+/* Utility */
+.hidden {
+  display: none;
+}
+
+@media (max-width: 480px) {
+  .form-container {
+    padding: 1.5rem;
+  }
+
+  input, button {
+    font-size: 0.9rem;
+  }
+}
+
+.form-container {
+  max-width: 540px; /* was 420px */
+}
+
+/* Location row (City + State + Country) */
+.location-group {
+  display: flex;
+  gap: 0.75rem;
+  margin: 0.5rem 0;
+}
+
+.location-group input {
+  flex: 1;
+  min-width: 0;
+}
+
+select {
+  padding: 0.75rem 1rem;
+  border: 1px solid #cbd5e1;
+  border-radius: 8px;
+  font-size: 0.95rem;
+  width: 100%;
+  margin: 0.5rem 0;
+}
+
+.location-group select,
+.location-group input {
+  flex: 1;
+  min-width: 0;
+}
+
+
+select {
+  padding: 0.75rem 1rem;
+  border: 1px solid #cbd5e1;
+  border-radius: 8px;
+  font-size: 0.95rem;
+  width: 100%;
+  margin: 0.5rem 0;
+  appearance: none;             /* Remove native styling */
+  background-color: #ffffff;
+  background-image: url("data:image/svg+xml;utf8,<svg fill='gray' height='16' viewBox='0 0 24 24' width='16' xmlns='http://www.w3.org/2000/svg'><path d='M7 10l5 5 5-5z'/></svg>");
+  background-repeat: no-repeat;
+  background-position: right 1rem center;
+  background-size: 16px 16px;
+}
+
+select:focus {
+  border-color: #2563eb;
+  outline: none;
+  box-shadow: 0 0 0 2px rgba(37, 99, 235, 0.2);
+}
+
+
+.search-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+  gap: 10px;
+}
+
+.search-input {
+  padding: 10px;
+  width: 300px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  font-size: 16px;
+}
+
+.search-btn {
+  padding: 10px 20px;
+  background-color: #1877f2; /* Facebook blue */
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.search-btn:hover {
+  background-color: #145dbf;
+}
