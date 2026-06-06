@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -58,3 +59,65 @@
 
 </body>
 </html>
+=======
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Pawluxe Home</title>
+  <link rel="stylesheet" href="HomePage/style.css" />
+  <script defer src="HomePage/homepagescript.js"></script>
+</head>
+<body>
+  
+  <header class="header">
+    <div class="branding">
+      <img src="HomePage/logo.png" alt="Pawluxe Logo" class="logo" />
+      <div class="brand-text">
+        <h1 class="brand-name">Pawluxe</h1>
+        <p class="slogan">Every Paw Matters, Every Heart Deserves Love.</p>
+      </div>
+    </div>
+    <div class="auth-buttons">
+      <button onclick="location.href='PawluxeLogin/signup.html'" class="btn signup-btn">Register</button>
+      <button onclick="location.href='PawluxeLogin/login.html'" class="btn login-btn">Login</button>
+    </div>
+    
+      
+  </header>
+
+  <section class="search-wrapper">
+    <div class="search-bar-combined">
+      <select id="petTypeDropdown" class="dropdown">
+        <option value="">Pet Type</option>
+        <option value="dog">Dog</option>
+        <option value="cat">Cat</option>
+      </select>
+      <select id="breedDropdown" class="dropdown">
+        <option value="">Breed</option>
+      </select>
+      <select id="petGenderDropdown" class="dropdown">
+        <option value="">Pet Gender</option>
+        <option value="male">Male</option>
+        <option value="female">Female</option>
+      </select>
+      <select id="stateDropdown" class="dropdown">
+        <option value="">State</option>
+      </select>
+      <select id="cityDropdown" class="dropdown">
+        <option value="">City</option>
+      </select>
+      <button class="search-btn">🔍</button>
+    </div>
+  </section>
+
+  <section class="content"></section>
+
+  <button class="floating-add-pet-btn" onclick="window.location.href='../PetAddForm/petForm.html'" title="Add Pet" style="display: none;">
+    ＋
+  </button>
+
+</body>
+</html>
+>>>>>>> 2750363c756a97451f7b626398db1faa26f61938
