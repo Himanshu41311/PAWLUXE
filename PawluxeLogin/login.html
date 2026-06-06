@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Pawluxe Login</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="form-container">
+    <h1>Login</h1>
+    <form id="loginForm">
+  <!-- Account Type -->
+  <select name="accountType" id="accountType" required>
+    <option value="">Select Account Type</option>
+    <option value="Individual Owner">Individual Owner</option>
+    <option value="organisation">Organisation</option>
+  </select>
+
+  <input type="text" name="userName" placeholder="Email or Mobile Number" required>
+  <input type="password" name="password" placeholder="Password" required>
+  <button type="submit">Login</button>
+</form>
+
+    <p>Don't have an account? <a href="signup.html">Sign up</a></p>
+  </div>
+
+  <script src="login.js"></script>
+</body>
+</html>

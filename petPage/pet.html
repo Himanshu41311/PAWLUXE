@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Adopt Pet | Pawluxe</title>
+  <link rel="stylesheet" href="pet.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <script defer src="pet.js"></script>
+</head>
+<body>
+ <header class="main-header">
+  <div class="header-container">
+    <a href="../index.html" class="logo">
+      <img src="logo.png" alt="Pawluxe Logo">
+      Pawluxe
+    </a>
+    <nav class="main-nav">
+      <ul>
+        <li><a href="../index.html"><i class="fas fa-home"></i> Home</a></li>
+        <li><a href="#"><i class="fas fa-user"></i>  Account</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+
+
+
+  <main class="pet-container">
+    <div class="media-section">
+      <div id="mainMedia" class="main-media"></div>
+      <div id="mediaThumbnails" class="media-thumbnails"></div>
+    </div>
+
+    <div class="details-section">
+      <h1 id="petName">Pet Name</h1>
+
+      <div class="info-grid">
+        <div class="info-item">
+          <span class="info-label">Breed:</span>
+          <span class="info-value" id="petBreed"></span>
+        </div>
+        <div class="info-item">
+          <span class="info-label">Age:</span>
+          <span class="info-value" id="petAge"></span>
+        </div>
+        <div class="info-item">
+          <span class="info-label">Gender:</span>
+          <span class="info-value" id="petGender"></span>
+        </div>
+        <div class="info-item">
+          <span class="info-label"></span>
+          <span class="info-value" id="ownerInfo"></span>
+        </div>
+      </div>
+
+      <div class="description-container">
+        <h3>About this pet</h3>
+        <p class="description" id="petDescription"></p>
+      </div>
+
+      <div class="price-container">
+        <p class="price" id="petPrice"></p>
+      </div>
+
+      <div class="action-buttons">
+        <button class="btn buy-now-btn" onclick="finalizeAdoption()">
+          <i class="fas fa-heart"></i> Take Him Home
+        </button>
+      </div>
+    </div>
+  </main>
+</body>
+</html>

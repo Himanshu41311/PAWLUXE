@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Pawluxe - Add Pet</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="form-container">
+    <div class="header-row">
+  <a href="../index.html" class="logo-link">
+    <img src="../HomePage/logo.png" alt="Pawluxe Logo" class="logo" />
+  </a>
+  <h1 class="form-title">Add Pet</h1>
+</div>
+    <form id="animalForm">
+      <input type="text" name="name" placeholder="Pet Name" required />
+
+      <div class="row">
+        <select id="petTypeDropdown" class="dropdown" required>
+          <option value="">Pet Type</option>
+          <option value="dog">Dog</option>
+          <option value="cat">Cat</option>
+        </select>
+        <select id="breedDropdown" class="dropdown" required>
+          <option value="">Breed</option>
+        </select>
+      </div>
+
+      <div class="row">
+        <select id="petGenderDropdown" class="dropdown" required>
+          <option value="">Gender</option>
+          <option value="male">Male</option>
+          <option value="female">Female</option>
+        </select>
+
+        <select name="ageInMonth" required>
+          <option value="">Age (Month)</option>
+          <option value="<1">Less than 1</option>
+          <!-- 1 to 11 months -->
+          <script>
+            for (let i = 1; i <= 11; i++) {
+              document.write(`<option value="${i}">${i}</option>`);
+            }
+          </script>
+        </select>
+
+        <select name="ageInYear" required>
+          <option value="">Age (Year)</option>
+          <script>
+            for (let i = 0; i <= 15; i++) {
+              document.write(`<option value="${i}">${i}</option>`);
+            }
+          </script>
+        </select>
+      </div>
+
+      <input type="number" name="price" placeholder="Price (₹)" min="0" step="1" required />
+
+      <textarea name="description" placeholder="Short Description" required></textarea>
+
+      <p class="section-label">Image Preview</p>
+      <div class="image-preview" id="previewContainer"></div>
+
+      <label class="upload-btn">
+        Upload Image
+        <input type="file" id="imageInput" hidden />
+      </label>
+
+      <button type="submit">Submit</button>
+    </form>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

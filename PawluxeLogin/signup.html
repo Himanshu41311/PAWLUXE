@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Pawluxe Signup</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="form-container">
+    <h1>Sign Up</h1>
+    <form id="signupForm">
+      <input type="text" name="fullName" placeholder="Full Name" required />
+
+      <!-- Account Type -->
+      <select name="accountType" id="accountType" required>
+        <option value="">Select Account Type</option>
+        <option value="individual">Individual Owner</option>
+        <option value="organisation">Organisation</option>
+      </select>
+
+      <!-- Organisation-specific fields -->
+      <div id="organisationFields" style="display:none;">
+        <select name="organisationType" id="organisationType">
+          <option value="">Select Organisation Type</option>
+          <option value="animal_shelter">Animal Shelter</option>
+          <option value="ngo">NGO</option>
+          <option value="pet_adoption_center">Pet Adoption Center</option>
+          <option value="other">Other</option>
+        </select>
+
+        <input type="text" name="organisationName" placeholder="Organisation Name" />
+      </div>
+
+      <div class="email-group">
+        <input type="email" name="email" placeholder="Email" id="email" required />
+        <button type="button" id="verifyEmailBtn">Verify Email</button>
+      </div>
+
+      <div id="otpSection" style="display:none;">
+        <input type="text" id="otpInput" placeholder="Enter OTP" />
+        <button type="button" id="submitOtpBtn">Submit OTP</button>
+      </div>
+
+      <input type="text" name="mobileNumber" placeholder="Mobile Number" required />
+      <input type="text" name="street" placeholder="Street" required />
+
+      <div class="location-group">
+        <select name="city" id="citySelect" required>
+          <option value="">Select City</option>
+        </select>
+
+        <select name="state" id="stateSelect" required>
+          <option value="">Select State</option>
+        </select>
+
+        <input type="text" name="country" placeholder="Country" value="India" readonly />
+      </div>
+
+      <input type="password" name="password" placeholder="Password" required />
+      <input type="password" name="confirmPassword" placeholder="Confirm Password" required />
+      <button type="submit">Sign Up</button>
+    </form>
+    <p>Already have an account? <a href="login.html">Login</a></p>
+  </div>
+
+  <script src="signup.js"></script>
+</body>
+</html>

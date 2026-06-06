@@ -1,0 +1,153 @@
+body {
+  margin: 0;
+  font-family: 'Amazon Ember', Arial, sans-serif;
+  background-color: #fff;
+  color: #333;
+  line-height: 1.6;
+}
+
+.main-header {
+  background-color: black;
+  color: #fff;
+  padding: 0.8rem 1rem;
+  position: fixed; /* fix at top */
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 999; /* keep on top */
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+}
+
+.header-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 2rem; /* spacing left & right */
+}
+
+
+.logo {
+  display: flex;
+  align-items: left;
+  color: #fff;
+  font-size: 1.8rem;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.logo img {
+  height: 40px;
+  margin-right: 8px;
+}
+
+.main-nav {
+  display: flex;
+  align-items: center;
+}
+
+.main-nav ul {
+  list-style: none;
+  display: flex;
+  gap: 1.2rem;
+  margin: 0;
+  padding: 0;
+}
+
+.main-nav a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 1rem;
+}
+
+/* Pet Detail Layout */
+.pet-container {
+  display: flex;
+  max-width: 1200px;
+  margin: 2rem auto;
+  gap: 2rem;
+  padding: 0 1rem;
+}
+
+.media-section {
+  flex: 0.8; /* reduced from 1 */
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.details-section {
+  flex: 1.2; /* increased from 1 */
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  background: var(--white);
+  padding: 1.5rem;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+
+.main-media img,
+.main-media video {
+  width: 100%;
+  max-height: 500px;
+  object-fit: contain;
+  background: #f3f3f3;
+  border-radius: 8px;
+}
+
+.media-thumbnails {
+  display: flex;
+  gap: 0.5rem;
+}
+
+.media-thumbnails img,
+.media-thumbnails video {
+  width: 80px;
+  height: 80px;
+  object-fit: cover;
+  border-radius: 4px;
+  cursor: pointer;
+  border: 2px solid transparent;
+}
+
+.media-thumbnails .selected {
+  border-color: #ff9900;
+}
+
+
+
+.details-section h1 {
+  font-size: 1.8rem;
+}
+
+.price {
+  font-size: 1.4rem;
+  font-weight: bold;
+  color: #ff4081;
+  margin-top: 1rem;
+}
+
+.btn {
+  padding: 0.75rem 1.5rem;
+  background: #ff9900;
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: background 0.3s;
+}
+
+.btn:hover {
+  background: #e88a00;
+}
+
+@media (max-width: 768px) {
+  .pet-container {
+    flex-direction: column;
+  }
+}
+body {
+  padding-top: 70px; /* can be adjusted */
+}
