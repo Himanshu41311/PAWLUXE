@@ -51,7 +51,7 @@ let lastPageReached = false;
     cat: ["Persian", "Maine Coon", "Siamese", "Bengal", "British Shorthair", "Ragdoll"]
   };
 
-  // 👤 Auth UI
+  
   const isLoggedIn = localStorage.getItem("isLoggedIn") === "true";
   const currentUser = JSON.parse(localStorage.getItem("currentUser") || "null");
   const authButtons = document.querySelector(".auth-buttons");
