@@ -1,4 +1,4 @@
-# 🐾 Pawluxe – Pet Adoption & Listing Platform
+# 🐾 Pawluxe – Pet Adoption Platform
 
 Pawluxe is a full-stack web application built to connect pet lovers across India. It allows users to list, adopt, or ethically purchase pets — including rescued animals and purebred pets — through a transparent and secure platform.
 
