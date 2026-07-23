@@ -2,8 +2,6 @@
 
 Pawluxe is a full-stack web application built to connect pet lovers across India. It allows users to list, adopt, or ethically adopt pets — including rescued animals and purebred pets — through a transparent and secure platform.
 
-> ⚠️ This is a solo-built, work-in-progress project using Java Spring Boot, PostgreSQL, and plain HTML/CSS/JavaScript.  
-> Designed with a microservices architecture and modular REST APIs.
 
 ---
 
